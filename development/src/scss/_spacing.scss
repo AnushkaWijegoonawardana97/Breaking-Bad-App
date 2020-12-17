@@ -1,0 +1,23 @@
+.sectionInnerPadding {
+	padding: 2rem;
+
+	&-x {
+		padding: 2rem 0rem;
+	}
+
+	&-y {
+		padding: 0rem 2rem;
+	}
+}
+
+.sectionInnerPadding-sm {
+	padding: 1rem;
+
+	&-x {
+		padding: 1rem 0rem;
+	}
+
+	&-y {
+		padding: 0rem 1rem;
+	}
+}
