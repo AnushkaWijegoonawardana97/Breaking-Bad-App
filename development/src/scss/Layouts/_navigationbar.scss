@@ -1,0 +1,11 @@
+#navigationBar {
+	.openOverlayerMenu {
+		cursor: pointer;
+
+		i {
+			color: $lightColor;
+			font-size: 2rem;
+			line-height: 2rem;
+		}
+	}
+}
