@@ -1,0 +1,14 @@
+.Footer {
+	background-color: $darkColor;
+	color: $lightColor;
+
+	p {
+		margin-bottom: 0;
+		font-weight: 500;
+
+		a {
+			color: $lightColor;
+			text-decoration: none;
+		}
+	}
+}
