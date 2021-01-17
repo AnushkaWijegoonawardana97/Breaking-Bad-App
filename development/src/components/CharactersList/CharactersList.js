@@ -1,12 +1,12 @@
 import React from "react";
 import Character from "./Character/Character";
 
-function CharactersList() {
+function CharactersList({ characters }) {
 	return (
 		<div className="sectionInnerPadding sectionInnerPadding-topOnly CharactersList">
-			<Character />
-			<Character />
-			<Character />
+			{characters.map((character) => {
+				return <Character key={character.char_id} character={character} />;
+			})}
 		</div>
 	);
 }

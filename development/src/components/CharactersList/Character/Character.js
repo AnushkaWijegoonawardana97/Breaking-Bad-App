@@ -1,32 +1,31 @@
 import React from "react";
-import CharacterImage from "../../../assets/Character.jpg";
 
-function Character() {
+function Character({ character }) {
 	return (
 		<div className="Character">
-			<img className="img-fluid" src={CharacterImage} alt="Character Name" />
+			<img className="img-fluid" src={character.img} alt="Character Name" />
 
 			<div className="Character-Overlayer text-center d-flex flex-column align-itmes-center justify-content-center sectionInnerPadding">
 				<h3 className="Character-Overlayer-Header text-capitalize">
-					Walter White
+					{character.name}
 				</h3>
 
 				<div className="Character-Overlayer-Details">
 					<p>
-						<span>Actor :</span> Bryan Cranston
+						<span>Actor :</span> {character.portrayed}
 					</p>
 					<p>
-						<span>Nickname :</span> Heisenberg
+						<span>Nickname :</span> {character.nickname}
 					</p>
 					<p>
-						<span>Born :</span> 09-07-1958
+						<span>Born :</span> {character.birthday}
 					</p>
 					<p>
 						<span>Occupations :</span> High School Chemistry Teacher / Meth King
 						Pin
 					</p>
 					<p>
-						<span>Status :</span> Presumed dead
+						<span>Status :</span> {character.status}
 					</p>
 					<p>
 						<span>Appearance :</span> Season 01, Season 02, Season 03, Season
