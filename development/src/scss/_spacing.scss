@@ -8,6 +8,16 @@
 	&-y {
 		padding: 0rem 2rem;
 	}
+
+	&-topOnly {
+		padding: unset;
+		padding-top: 2rem;
+	}
+
+	&-bottomOnly {
+		padding: unset;
+		padding-bottom: 2rem;
+	}
 }
 
 .sectionInnerPadding-sm {
@@ -19,5 +29,24 @@
 
 	&-y {
 		padding: 0rem 1rem;
+	}
+
+	&-topOnly {
+		padding: unset;
+		padding-top: 1rem;
+	}
+
+	&-bottomOnly {
+		padding: unset;
+		padding-bottom: 1rem;
+	}
+}
+
+.sectionseperator {
+	padding: 2rem 0rem;
+
+	&-bottom {
+		padding: unset;
+		padding-bottom: 4rem;
 	}
 }
