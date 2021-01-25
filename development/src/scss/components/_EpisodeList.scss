@@ -1,0 +1,43 @@
+.EpisodesList {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+
+	.EpisodeCard {
+		box-sizing: border-box;
+		box-shadow: 0px 4px 8px rgba(#000000, 0.25);
+		padding: 2rem;
+		border-radius: 0.5rem;
+
+		.EpisodeName {
+			font-weight: 500;
+			font-size: 1.5rem;
+			line-height: 2rem;
+			margin-bottom: 0.5rem;
+		}
+
+		.EpisodeNumber {
+			font-weight: 400;
+			font-size: 1.125rem;
+			line-height: 1.5rem;
+			margin-bottom: 0.5rem;
+		}
+
+		.AirDate {
+			font-weight: 400;
+			font-size: 1.125rem;
+			line-height: 1.5rem;
+			margin-bottom: 1rem;
+
+			span {
+				font-weight: 300;
+			}
+		}
+
+		.Characters {
+			font-weight: 300;
+			font-size: 1.125rem;
+			line-height: 1.5rem;
+		}
+	}
+}

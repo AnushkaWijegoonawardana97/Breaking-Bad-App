@@ -2,7 +2,7 @@ import React from "react";
 
 function SearchForm(props) {
 	return (
-		<form className="SearchForm w-75 mx-auto">
+		<form className="SearchForm w-75 mx-auto mb-3">
 			<div className="form-group">
 				<input
 					type="text"

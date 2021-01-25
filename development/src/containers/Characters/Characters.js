@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import CharactersList from "../../components/CharactersList/CharactersList";
 import SearchForm from "../../components/SearchForm/SearchForm";
 import BodyLayout from "../BodyLayout/BodyLayout";
@@ -25,26 +25,24 @@ function Characters() {
 	}, []);
 
 	let CharaterBody = (
-		<div className="alert alert-primary w-50 mx-auto" role="alert">
+		<div className="alert alert-primary w-50 mx-auto d-block" role="alert">
 			Charater Data is Still Loading...
 		</div>
 	);
 
 	if (!loading) {
-		CharaterBody = (
-			<Fragment>
-				<SearchForm searchPlaceholder={"Search Cast & Characters..."} />
-
-				<CharactersList characters={characters} />
-			</Fragment>
-		);
+		CharaterBody = <CharactersList characters={characters} />;
 	}
 
 	return (
 		<div>
 			<Pageheader pageTitle="CAST & CHARACTERS" />
 
-			<BodyLayout>{CharaterBody}</BodyLayout>
+			<BodyLayout>
+				<SearchForm searchPlaceholder={"Search Cast & Characters..."} />
+
+				{CharaterBody}
+			</BodyLayout>
 
 			<PageFooter />
 		</div>
