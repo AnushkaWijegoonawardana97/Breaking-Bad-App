@@ -1,12 +1,11 @@
 import React from "react";
 
-function Quote() {
+function Quote({ quote }) {
+	// console.log(quote);
 	return (
-		<div className="QuoteCard">
-			<div className="QuoteText">
-				I am not in danger, Skyler. I am the danger!
-			</div>
-			<div className="QuoteBy">- Walter White -</div>
+		<div className="QuoteCard d-flex flex-column align-items-center justify-content-center">
+			<div className="QuoteText">{quote.quote}</div>
+			<div className="QuoteBy">- {quote.author} -</div>
 		</div>
 	);
 }

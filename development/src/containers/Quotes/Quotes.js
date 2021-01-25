@@ -14,11 +14,23 @@ function Quotes() {
 		const fetchQuotes = async () => {
 			const results = await axios("https://www.breakingbadapi.com/api/quotes");
 
-			console.log(results.data);
+			// console.log(results.data);
+			setQuotes(results.data);
+			setloading(false);
 		};
 
 		fetchQuotes();
 	}, []);
+
+	let QuotesBody = (
+		<div className="alert alert-primary w-50 mx-auto d-block" role="alert">
+			Quotes Data is Still Loading...
+		</div>
+	);
+
+	if (!loading) {
+		QuotesBody = <QuotesList quotes={quotes} />;
+	}
 
 	return (
 		<div>
@@ -27,7 +39,7 @@ function Quotes() {
 			<BodyLayout>
 				<SearchForm searchPlaceholder={"Search Quotes..."} />
 
-				<QuotesList />
+				{QuotesBody}
 			</BodyLayout>
 
 			<PageFooter />

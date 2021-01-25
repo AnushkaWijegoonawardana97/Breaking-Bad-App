@@ -1,10 +1,13 @@
 import React from "react";
 import Quote from "./Quote/Quote";
 
-function QuotesList() {
+function QuotesList({ quotes }) {
+	// console.log(quotes);
 	return (
 		<div className="QuotesList">
-			<Quote />
+			{quotes.map((quote) => {
+				return <Quote key={quote.quote_id} quote={quote} />;
+			})}
 		</div>
 	);
 }
