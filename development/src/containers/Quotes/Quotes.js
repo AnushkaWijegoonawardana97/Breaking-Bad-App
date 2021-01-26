@@ -6,13 +6,16 @@ import BodyLayout from "../BodyLayout/BodyLayout";
 import PageFooter from "../PageFooter/PageFooter";
 import Pageheader from "../Pageheader/Pageheader";
 
-function Quotes() {
+function Quotes(props) {
 	const [quotes, setQuotes] = useState();
 	const [loading, setloading] = useState(true);
+	const [searchQuery, setSearchQuery] = useState("");
 
 	useEffect(() => {
 		const fetchQuotes = async () => {
-			const results = await axios("https://www.breakingbadapi.com/api/quotes");
+			const results = await axios(
+				`https://www.breakingbadapi.com/api/quotes?author=${searchQuery}`
+			);
 
 			// console.log(results.data);
 			setQuotes(results.data);
@@ -20,7 +23,7 @@ function Quotes() {
 		};
 
 		fetchQuotes();
-	}, []);
+	}, [searchQuery]);
 
 	let QuotesBody = (
 		<div className="alert alert-primary w-50 mx-auto d-block" role="alert">
@@ -34,10 +37,13 @@ function Quotes() {
 
 	return (
 		<div>
-			<Pageheader pageTitle="Quotes" />
+			<Pageheader pageTitle="Quotes" onClickHandler={props.onClickHandler} />
 
 			<BodyLayout>
-				<SearchForm searchPlaceholder={"Search Quotes..."} />
+				<SearchForm
+					searchPlaceholder={"Search Quotes By Author..."}
+					getSearchQuery={(q) => setSearchQuery(q)}
+				/>
 
 				{QuotesBody}
 			</BodyLayout>
