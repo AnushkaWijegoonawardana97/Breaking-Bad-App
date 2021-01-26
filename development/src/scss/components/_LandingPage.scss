@@ -1,0 +1,56 @@
+.LandingPage {
+	min-height: 100vh;
+	background-image: url(../../assets/Homepage-bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	box-sizing: border-box;
+
+	.LandingContent {
+		.primaryHeading {
+			margin-bottom: 1.5rem;
+		}
+
+		p {
+			margin-bottom: 2rem;
+			font-size: 1.5rem;
+			line-height: 2rem;
+			font-weight: 500;
+		}
+	}
+
+	.LandingRouterContainer {
+		.LinkCard {
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			flex-basis: 30%;
+			min-height: 30vh;
+			border-radius: 1rem;
+			position: relative;
+			cursor: pointer;
+
+			&-01 {
+				background-image: url(../../assets/cast&characters.jpg);
+			}
+
+			&-02 {
+				background-image: url(../../assets/episodes.jpg);
+			}
+
+			&-03 {
+				background-image: url(../../assets/quotes.jpg);
+			}
+
+			.LinkText {
+				position: absolute;
+				padding: 2rem;
+				left: 0;
+				bottom: 0;
+				margin-bottom: 0;
+				font-size: 1.5rem;
+				line-height: 2rem;
+				font-weight: 500;
+			}
+		}
+	}
+}

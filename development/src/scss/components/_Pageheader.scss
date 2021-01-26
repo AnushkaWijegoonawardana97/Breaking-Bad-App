@@ -4,21 +4,21 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	.MenuToggelButton {
-		cursor: pointer;
-
-		i {
-			font-size: 2rem;
-			line-height: 2rem;
-			color: $lightColor;
-		}
-	}
-
 	.PageHeadline {
 		font-family: "Poppins", sans-serif;
 		font-weight: 600;
 		font-size: 3rem;
 		line-height: 4.5rem;
+		color: $lightColor;
+	}
+}
+
+.MenuToggelButton {
+	cursor: pointer;
+
+	i {
+		font-size: 2rem;
+		line-height: 2rem;
 		color: $lightColor;
 	}
 }

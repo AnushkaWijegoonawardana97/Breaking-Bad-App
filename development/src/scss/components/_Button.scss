@@ -1,0 +1,22 @@
+.PrimaryButton {
+	background-color: transparent;
+	color: $themeColor;
+	border: 2px solid $themeColor;
+	padding: 1rem 1.5rem;
+	border-radius: 0.5rem;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 500;
+	transition: 0.5s ease-in;
+	outline: unset;
+	box-shadow: unset;
+	display: inline-block;
+	margin-right: 2rem;
+	text-decoration: unset;
+
+	&:hover,
+	&-active {
+		background-color: $themeColor;
+		color: $lightColor;
+	}
+}

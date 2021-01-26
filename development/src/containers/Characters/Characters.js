@@ -16,7 +16,7 @@ function Characters() {
 				"https://www.breakingbadapi.com/api/characters"
 			);
 
-			console.log(results.data);
+			// console.log(results.data);
 			setCharacters(results.data);
 			setLoading(false);
 		};

@@ -16,7 +16,7 @@ function Episodes() {
 				"https://www.breakingbadapi.com/api/episodes"
 			);
 
-			console.log(results.data);
+			// console.log(results.data);
 			setEpisodes(results.data);
 			setLoading(false);
 		};
