@@ -22,3 +22,19 @@
 		color: $lightColor;
 	}
 }
+
+@include screen-sm {
+	.Pageheader {
+		.PageHeadline {
+			font-size: 1.5rem;
+			line-height: 2.25rem;
+		}
+	}
+
+	.MenuToggelButton {
+		i {
+			font-size: 1rem;
+			line-height: 1rem;
+		}
+	}
+}

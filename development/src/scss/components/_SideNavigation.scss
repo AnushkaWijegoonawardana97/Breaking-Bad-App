@@ -29,3 +29,19 @@
 		}
 	}
 }
+
+@include screen-sm {
+	.SideNavigation {
+		width: 50vw;
+
+		.NavigationLinks {
+			padding-top: 2rem;
+
+			.NavigationLink {
+				font-size: 1rem;
+				line-height: 1rem;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}

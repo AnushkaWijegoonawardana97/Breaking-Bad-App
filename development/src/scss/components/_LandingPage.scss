@@ -54,3 +54,31 @@
 		}
 	}
 }
+
+@include screen-sm {
+	.LandingPage {
+		.LandingContent {
+			width: 100% !important;
+
+			.primaryHeading {
+				margin-bottom: 0.75rem;
+			}
+
+			p {
+				margin-bottom: 1rem;
+				font-size: 0.75rem;
+				line-height: 1rem;
+			}
+		}
+
+		.LandingRouterContainer {
+			.LinkCard {
+				.LinkText {
+					padding: 1rem;
+					font-size: 0.75rem;
+					line-height: 1rem;
+				}
+			}
+		}
+	}
+}

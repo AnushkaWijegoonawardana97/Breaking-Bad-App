@@ -54,3 +54,62 @@
 .BodyLayout {
 	min-height: 70vh;
 }
+
+@include screen-sm {
+	.sectionInnerPadding {
+		padding: 1rem;
+
+		&-x {
+			padding: 1rem 0rem;
+		}
+
+		&-y {
+			padding: 0rem 1rem;
+		}
+
+		&-topOnly {
+			padding: unset;
+			padding-top: 1rem;
+		}
+
+		&-bottomOnly {
+			padding: unset;
+			padding-bottom: 1rem;
+		}
+	}
+
+	.sectionInnerPadding-sm {
+		padding: 0.5rem;
+
+		&-x {
+			padding: 0.5rem 0rem;
+		}
+
+		&-y {
+			padding: 0rem 0.5rem;
+		}
+
+		&-topOnly {
+			padding: unset;
+			padding-top: 0.5rem;
+		}
+
+		&-bottomOnly {
+			padding: unset;
+			padding-bottom: 0.5rem;
+		}
+	}
+
+	.sectionseperator {
+		padding: 1rem 0rem;
+
+		&-bottom {
+			padding: unset;
+			padding-bottom: 2rem;
+		}
+	}
+
+	.BodyLayout {
+		min-height: 50vh;
+	}
+}

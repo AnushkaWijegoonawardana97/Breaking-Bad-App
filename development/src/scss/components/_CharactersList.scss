@@ -1,6 +1,6 @@
 .CharactersList {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 2rem;
 
 	.Character {
@@ -48,6 +48,30 @@
 
 					span {
 						font-weight: 400;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include screen-sm {
+	.CharactersList {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1rem;
+
+		.Character {
+			.Character-Overlayer {
+				.Character-Overlayer-Details {
+					.Character-Overlayer-Header {
+						font-size: 0.75rem !important;
+						line-height: 1rem;
+						margin-bottom: 1rem;
+					}
+
+					p {
+						font-size: 0.5rem;
+						line-height: 0.75rem;
 					}
 				}
 			}
