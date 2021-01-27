@@ -1,6 +1,6 @@
 .QuotesList {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 2rem;
 
 	.QuoteCard {
@@ -21,6 +21,28 @@
 			font-weight: 500;
 			font-size: 1.5rem;
 			line-height: 2rem;
+		}
+	}
+}
+
+@include screen-sm {
+	.QuotesList {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1rem;
+
+		.QuoteCard {
+			padding: 1rem;
+
+			.QuoteText {
+				font-size: 0.5rem;
+				line-height: 0.75rem;
+				margin-bottom: 0.5rem;
+			}
+
+			.QuoteBy {
+				font-size: 0.75rem;
+				line-height: 1rem;
+			}
 		}
 	}
 }

@@ -12,3 +12,11 @@
 		}
 	}
 }
+
+@include screen-sm {
+	.Footer {
+		p {
+			font-size: 0.75rem !important;
+		}
+	}
+}

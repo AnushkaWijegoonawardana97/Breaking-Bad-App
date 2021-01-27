@@ -17,7 +17,7 @@ function Homepage(props) {
 
 	return (
 		<div className="LandingPage sectionInnerPadding d-flex flex-column justify-content-between">
-			<HeaderNavigation />
+			<HeaderNavigation onClickHandler={props.onClickHandler} />
 
 			<section className="LandingContent w-50 lightColor">
 				<h1 className="primaryHeading">BREAKING BAD</h1>

@@ -6,14 +6,15 @@ import BodyLayout from "../BodyLayout/BodyLayout";
 import PageFooter from "../PageFooter/PageFooter";
 import Pageheader from "../Pageheader/Pageheader";
 
-function Episodes() {
+function Episodes(props) {
 	const [episodes, setEpisodes] = useState();
 	const [loading, setLoading] = useState(true);
+	const [searchQuery, setSearchQuery] = useState("");
 
 	useEffect(() => {
 		const fetchEpisoeds = async () => {
 			const results = await axios(
-				"https://www.breakingbadapi.com/api/episodes"
+				`https://www.breakingbadapi.com/api/episodes?series=${searchQuery}`
 			);
 
 			// console.log(results.data);
@@ -22,7 +23,7 @@ function Episodes() {
 		};
 
 		fetchEpisoeds();
-	}, []);
+	}, [searchQuery]);
 
 	let EpisodeBody = (
 		<div className="alert alert-primary w-50 mx-auto d-block" role="alert">
@@ -36,10 +37,13 @@ function Episodes() {
 
 	return (
 		<div>
-			<Pageheader pageTitle="Episodes" />
+			<Pageheader pageTitle="Episodes" onClickHandler={props.onClickHandler} />
 
 			<BodyLayout>
-				<SearchForm searchPlaceholder={"Search Episodes..."} />
+				<SearchForm
+					searchPlaceholder={"Search Episodes..."}
+					getSearchQuery={(q) => setSearchQuery(q)}
+				/>
 
 				{EpisodeBody}
 			</BodyLayout>

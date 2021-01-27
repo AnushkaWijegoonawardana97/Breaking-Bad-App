@@ -1,6 +1,6 @@
 .EpisodesList {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 2rem;
 
 	.EpisodeCard {
@@ -38,6 +38,38 @@
 			font-weight: 300;
 			font-size: 1.125rem;
 			line-height: 1.5rem;
+		}
+	}
+}
+
+@include screen-sm {
+	.EpisodesList {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1rem;
+
+		.EpisodeCard {
+			padding: 1rem;
+
+			.EpisodeName {
+				font-size: 0.75rem;
+				line-height: 1rem;
+			}
+
+			.EpisodeNumber {
+				font-size: 0.5rem;
+				line-height: 0.75rem;
+			}
+
+			.AirDate {
+				font-size: 0.5rem;
+				line-height: 0.75rem;
+				margin-bottom: 0.5rem;
+			}
+
+			.Characters {
+				font-size: 0.5rem;
+				line-height: 0.75rem;
+			}
 		}
 	}
 }

@@ -1,0 +1,47 @@
+.Overlayer {
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	background-color: rgba($darkColor, 0.75);
+}
+
+.SideNavigation {
+	position: fixed;
+	z-index: 2;
+	height: 100%;
+	width: 20vw;
+	top: 0;
+	right: 0;
+	background-color: $darkColor;
+
+	.NavigationLinks {
+		padding-top: 4rem;
+
+		.NavigationLink {
+			display: block;
+			text-decoration: unset;
+			color: $lightColor;
+			font-size: 2rem;
+			line-height: 2rem;
+			margin-bottom: 2rem;
+			font-weight: 500;
+		}
+	}
+}
+
+@include screen-sm {
+	.SideNavigation {
+		width: 50vw;
+
+		.NavigationLinks {
+			padding-top: 2rem;
+
+			.NavigationLink {
+				font-size: 1rem;
+				line-height: 1rem;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}
