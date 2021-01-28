@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Characters from "./containers/Characters/Characters";
 import Episodes from "./containers/Episodes/Episodes";

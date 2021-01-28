@@ -19,7 +19,7 @@ function Homepage(props) {
 		<div className="LandingPage sectionInnerPadding d-flex flex-column justify-content-between">
 			<HeaderNavigation onClickHandler={props.onClickHandler} />
 
-			<section className="LandingContent w-50 lightColor">
+			<section className="LandingContent w-50 lightColor mb-3">
 				<h1 className="primaryHeading">BREAKING BAD</h1>
 				<p>
 					Walter White, a chemistry teacher, discovers that he has cancer and

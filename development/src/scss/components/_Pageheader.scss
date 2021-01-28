@@ -38,3 +38,19 @@
 		}
 	}
 }
+
+@include screen-md {
+	.Pageheader {
+		.PageHeadline {
+			font-size: 2.25rem;
+			line-height: 3.25rem;
+		}
+	}
+
+	.MenuToggelButton {
+		i {
+			font-size: 1.5rem;
+			line-height: 1.5rem;
+		}
+	}
+}

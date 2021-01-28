@@ -46,3 +46,24 @@
 		}
 	}
 }
+
+@include screen-md {
+	.QuotesList {
+		grid-gap: 1.5rem;
+
+		.QuoteCard {
+			padding: 1.5rem;
+
+			.QuoteText {
+				font-size: 0.75rem;
+				line-height: 1.15rem;
+				margin-bottom: 0.75rem;
+			}
+
+			.QuoteBy {
+				font-size: 1.15rem;
+				line-height: 1.5rem;
+			}
+		}
+	}
+}
