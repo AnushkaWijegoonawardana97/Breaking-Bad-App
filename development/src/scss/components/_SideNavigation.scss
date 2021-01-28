@@ -45,3 +45,19 @@
 		}
 	}
 }
+
+@include screen-sm {
+	.SideNavigation {
+		width: 40vw;
+
+		.NavigationLinks {
+			padding-top: 3rem;
+
+			.NavigationLink {
+				font-size: 1.5rem;
+				line-height: 1.5rem;
+				margin-bottom: 1.5rem;
+			}
+		}
+	}
+}

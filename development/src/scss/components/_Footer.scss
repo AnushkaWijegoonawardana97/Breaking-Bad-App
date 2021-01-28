@@ -20,3 +20,11 @@
 		}
 	}
 }
+
+@include screen-md {
+	.Footer {
+		p {
+			font-size: 1.15rem !important;
+		}
+	}
+}

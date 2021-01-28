@@ -82,3 +82,31 @@
 		}
 	}
 }
+
+@include screen-md {
+	.LandingPage {
+		.LandingContent {
+			width: 70% !important;
+
+			.primaryHeading {
+				margin-bottom: 1.15rem;
+			}
+
+			p {
+				margin-bottom: 1.5rem;
+				font-size: 1.15rem;
+				line-height: 1.5rem;
+			}
+		}
+
+		.LandingRouterContainer {
+			.LinkCard {
+				.LinkText {
+					padding: 1.5rem;
+					font-size: 1.15rem;
+					line-height: 1.5rem;
+				}
+			}
+		}
+	}
+}
