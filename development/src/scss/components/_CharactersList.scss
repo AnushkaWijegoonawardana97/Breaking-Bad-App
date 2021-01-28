@@ -78,3 +78,27 @@
 		}
 	}
 }
+
+@include screen-md {
+	.CharactersList {
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 1.5rem;
+
+		.Character {
+			.Character-Overlayer {
+				.Character-Overlayer-Details {
+					.Character-Overlayer-Header {
+						font-size: 1.15rem !important;
+						line-height: 1.5rem;
+						margin-bottom: 1.5rem;
+					}
+
+					p {
+						font-size: 0.75rem;
+						line-height: 1.15rem;
+					}
+				}
+			}
+		}
+	}
+}

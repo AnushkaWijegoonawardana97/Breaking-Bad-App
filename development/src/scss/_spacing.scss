@@ -113,3 +113,62 @@
 		min-height: 50vh;
 	}
 }
+
+@include screen-md {
+	.sectionInnerPadding {
+		padding: 1.5rem;
+
+		&-x {
+			padding: 1.5rem 0rem;
+		}
+
+		&-y {
+			padding: 0rem 1.5rem;
+		}
+
+		&-topOnly {
+			padding: unset;
+			padding-top: 1.5rem;
+		}
+
+		&-bottomOnly {
+			padding: unset;
+			padding-bottom: 1.5rem;
+		}
+	}
+
+	.sectionInnerPadding-sm {
+		padding: 0.75rem;
+
+		&-x {
+			padding: 0.75rem 0rem;
+		}
+
+		&-y {
+			padding: 0rem 0.75rem;
+		}
+
+		&-topOnly {
+			padding: unset;
+			padding-top: 0.75rem;
+		}
+
+		&-bottomOnly {
+			padding: unset;
+			padding-bottom: 0.75rem;
+		}
+	}
+
+	.sectionseperator {
+		padding: 1.5rem 0rem;
+
+		&-bottom {
+			padding: unset;
+			padding-bottom: 3rem;
+		}
+	}
+
+	.BodyLayout {
+		min-height: 75vh;
+	}
+} ;

@@ -73,3 +73,35 @@
 		}
 	}
 }
+
+@include screen-md {
+	.EpisodesList {
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 1.5rem;
+
+		.EpisodeCard {
+			padding: 1.5rem;
+
+			.EpisodeName {
+				font-size: 1.15rem;
+				line-height: 1.5rem;
+			}
+
+			.EpisodeNumber {
+				font-size: 0.75rem;
+				line-height: 1.15rem;
+			}
+
+			.AirDate {
+				font-size: 0.75rem;
+				line-height: 1.15rem;
+				margin-bottom: 0.75rem;
+			}
+
+			.Characters {
+				font-size: 0.75rem;
+				line-height: 1.15rem;
+			}
+		}
+	}
+}
