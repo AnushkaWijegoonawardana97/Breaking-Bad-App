@@ -7,11 +7,7 @@ For this app, I am using Bootstrap, Axios like libraries also.
 
 ## Developed Using
 
-<img src="https://img.icons8.com/officel/48/000000/react.png"/>
-<img src="https://img.icons8.com/color/48/000000/bootstrap.png"/>
-<img src="https://img.icons8.com/color/48/000000/sass.png"/>
-<img src="https://img.icons8.com/color/48/000000/npm.png"/>
-<img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
+<img src="https://img.icons8.com/officel/48/000000/react.png"/> <img src="https://img.icons8.com/color/48/000000/bootstrap.png"/> <img src="https://img.icons8.com/color/48/000000/sass.png"/> <img src="https://img.icons8.com/color/48/000000/npm.png"/> <img src="https://img.icons8.com/color/48/000000/adobe-xd.png"/>
 
 ## Live Demo (URL)
 
