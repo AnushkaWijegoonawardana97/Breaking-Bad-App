@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/679e45aa-8924-4c94-ac14-f913672f0c27/deploy-status)](https://app.netlify.com/sites/breaking-bad-api-app/deploys) [![time tracker](https://wakatime.com/badge/github/AnushkaWijegoonawardana97/Breaking-Bad-App.svg)](https://wakatime.com/badge/github/AnushkaWijegoonawardana97/Breaking-Bad-App)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/679e45aa-8924-4c94-ac14-f913672f0c27/deploy-status)](https://app.netlify.com/sites/breaking-bad-api-app/deploys) [![time tracker](https://wakatime.com/badge/github/AnushkaWijegoonawardana97/Breaking-Bad-App.svg)](https://wakatime.com/badge/github/AnushkaWijegoonawardana97/Breaking-Bad-App) [![GitHub issues](https://img.shields.io/github/issues/AnushkaWijegoonawardana97/Breaking-Bad-App)](https://github.com/AnushkaWijegoonawardana97/Breaking-Bad-App/issues)
 
 # Breaking Bad App
 
